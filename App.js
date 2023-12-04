@@ -1,18 +1,24 @@
 import React from "react"
 import ReactDOM  from "react-dom/client";
 
-const parent = React.createElement("div", {id : "parent"} , [
-    React.createElement("div", {id : "child"}, [
-        React.createElement("h1", {id : "heading"}, "This is react"),
-    React.createElement("h2", {id : "heading1"}, "Iam an h2 tag")
-    ]),
-    React.createElement("div", {id : "child1"}, [
-        React.createElement("h1", {}, "Iam an h1 tag"),
-    React.createElement("h2", {}, "Iam an h2 tag")
-    ])
-]);
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
+// JSX  => transfiles it to => React.createElement => React Element => Js object => Html Element(render)
 
-const root = ReactDOM.createRoot(document.getElementById("root")); 
+const Heading = () => <h1 id="heading">Hello React</h1>
 
-root.render(parent); 
+const number = 10949;
+
+const HeadingComponent = () => (
+    <div>
+        <Heading />
+        {number}
+        <Heading></Heading>
+        {Heading()}
+        <h1 className="heading">Namaste React Functional Component</h1>
+        {19 + 13}
+    </div>
+
+)
+
+root.render(<HeadingComponent />);
