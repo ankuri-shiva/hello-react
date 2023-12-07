@@ -1,0 +1,45 @@
+.nav-container {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  display: flex;
+}
+
+.nav-items {
+  align-items: center;
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-items > li {
+  margin-right: 10px;
+}
+
+.app-logo {
+  width: 150px;
+}
+
+.body-container {
+  flex-wrap: wrap;
+  padding: 10px;
+  display: flex;
+}
+
+.card-container {
+  background-color: #f0f0f0;
+  width: 250px;
+  margin: 5px;
+  padding: 12px;
+}
+
+.card-container:hover {
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.rest-image {
+  width: 240px;
+  height: 150px;
+}
+
+/*# sourceMappingURL=index.61d3354a.css.map */

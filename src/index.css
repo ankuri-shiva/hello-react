@@ -1,0 +1,36 @@
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+.nav-items {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.nav-items > li {
+    margin-right: 10px;
+}
+.app-logo {
+    width: 150px;
+}
+.body-container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-container {
+   margin: 5px;
+    width: 250px;
+    padding: 12px;
+    background-color: #f0f0f0;
+}
+.card-container:hover {
+    cursor: pointer;
+    border: 1px solid black;
+}
+.rest-image {
+    width: 240px;
+    height: 150px;
+}
